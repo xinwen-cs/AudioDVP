@@ -1,6 +1,6 @@
 .vscode/
 runs/
-weights/
+weights/*
 
 data/video/*
 data/test_audio/feature
@@ -20,10 +20,12 @@ data/test_audio/result.mp4
 */**/**/__pycache__
 */**/**/**/__pycache__
 
-renderer/data/
+renderer/data/*
 renderer/kernels/build/
 renderer/kernels/dist/
 renderer/kernels/rasterize_triangles_cpp.egg-info/
 renderer/kernels/rasterize_triangles_cpp.*.so
 
 vendor/ATVGnet/model/*
+
+!.gitkeep
