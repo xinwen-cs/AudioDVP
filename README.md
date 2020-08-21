@@ -17,7 +17,7 @@ FYI, detailed environment setup is in enviroment.yml.
 
 ## Major implementation differences against original paper
 
-* Geometry parameter $\alpha$ and texture $\beta$ parameter of 3DMM is now initialized from zero and shared among all samples during fitting, since it is more reasonable.
+* Geometry parameter and texture parameter of 3DMM is now initialized from zero and shared among all samples during fitting, since it is more reasonable.
 
 * Using OpenCV rather than PIL for image editing operation.
 
