@@ -107,18 +107,6 @@ Please DO NOT abuse the code for devil things.
 
 
 
-## Citation
-
-    @article{wen2020audiodvp,
-        author={Xin Wen and Miao Wang and Christian Richardt and Ze-Yin Chen and Shi-Min Hu},
-        journal={IEEE Transactions on Visualization and Computer Graphics}, 
-        title={Photorealistic Audio-driven Video Portraits}, 
-        year={2020},
-        volume={25},
-        number={11},
-        pages={3052-3062}
-    }
-
 ## License
 
-**GPL**
+**BSD**
