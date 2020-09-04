@@ -98,14 +98,24 @@ We use resnet50_ft from https://drive.google.com/open?id=1A94PAAnwk6L7hXdBXLFosB
 
 * Our **renderer** is heavily borrowed from https://github.com/google/tf_mesh_renderer and inspired by https://github.com/andrewkchan/pytorch_mesh_renderer.
 
-
+## Notification
+* Our method is built upon *Deep Video Portraits*.
+* Our method adopts a person-specific Audio2Expression module, which is not robust enough than a universal one trained on large dataset such as *Lip Reading Sentences in the Wild*. A universal one is encouraged! Fortunately, our method works quite well on WaveNet sythesized audio like provided in `data/test_audio`.
 
 ## Disclaimer
 
 We made this code publicly available to benefit graphics and vision community.
 Please DO NOT abuse the code for devil things. 
 
-
+## Citation
+```
+@article{wen2020audiodvp,
+    author={Xin Wen and Miao Wang and Christian Richardt and Ze-Yin Chen and Shi-Min Hu},
+    journal={IEEE Transactions on Visualization and Computer Graphics}, 
+    title={Photorealistic Audio-driven Video Portraits}, 
+    year={2020}
+}
+```
 
 ## License
 
