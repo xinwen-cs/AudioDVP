@@ -102,6 +102,7 @@ We use resnet50_ft from https://drive.google.com/open?id=1A94PAAnwk6L7hXdBXLFosB
 * Our method is built upon *Deep Video Portraits*.
 * Our method adopts a person-specific Audio2Expression module, which is not robust enough than a universal one trained on large dataset such as *Lip Reading Sentences in the Wild*. A universal one is encouraged! Fortunately, our method works quite well on WaveNet sythesized audio like provided in `data/test_audio`.
 * The code IS NOT fully tested on another clean machine.
+* There is a known bug in the rasterizer that several pixels of rendered face are black (not assigned with any color) in some corner conditions due to float point error which I can't fix.
 
 ## Disclaimer
 
