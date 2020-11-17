@@ -26,17 +26,20 @@ FYI, detailed environment setup is in enviroment.yml.
 
 ### 1. Download face model data
 
-* Download **Basel Face Model 2009** from https://faces.dmi.unibas.ch/bfm/main.php.
-* Download **expression basis** from https://github.com/Juyong/3DFace.
+* Download Basel Face Model 2009 from https://faces.dmi.unibas.ch/bfm/main.php. (Register and get **01_MorphableModel.mat**.)
+
+* Download expression basis from https://github.com/Juyong/3DFace. (There is an **Exp_Pca.bin** in CoarseData.)
+
+* Download auxiliary files from https://github.com/microsoft/Deep3DFaceReconstruction/tree/master/BFM.
 
 * Put the data in `renderer/data` like the structure below.
 
     ```
     renderer/data
     ├── 01_MorphableModel.mat
-    ├── BFM_exp_idx.mat
-    ├── BFM_front_idx.mat
     ├── Exp_Pca.bin
+    ├── BFM_front_idx.mat
+    ├── BFM_exp_idx.mat
     ├── facemodel_info.mat
     ├── select_vertex_id.mat
     ├── std_exp.txt
@@ -85,6 +88,8 @@ We provide expected result in `data/sample_result.mp4` using synthesized audio i
 
 This work is build upon many great open source code and data.
 
+* Many implementation details are learned from https://github.com/microsoft/Deep3DFaceReconstruction/.
+
 * **ATVGnet** in the vendor directory is directly borrowed from https://github.com/lelechen63/ATVGnet under MIT License.
 
 * **neural-face-renderer** in the vendor directory is heavily borrowed from https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix under BSD License.
@@ -96,7 +101,7 @@ We use resnet50_ft from https://drive.google.com/open?id=1A94PAAnwk6L7hXdBXLFosB
 
 * The **expression basis** of 3DMM is from https://github.com/Juyong/3DFace under GPL License.
 
-* Our **renderer** is heavily borrowed from https://github.com/google/tf_mesh_renderer and inspired by https://github.com/andrewkchan/pytorch_mesh_renderer.
+* Our **renderer** is heavily borrowed from https://github.com/google/tf_mesh_renderer and inspired by and https://github.com/andrewkchan/pytorch_mesh_renderer.
 
 ## Notification
 * Our method is built upon *Deep Video Portraits*.
