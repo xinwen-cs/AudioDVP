@@ -120,9 +120,14 @@ Please DO NOT abuse the code for devil things.
     author={Xin Wen and Miao Wang and Christian Richardt and Ze-Yin Chen and Shi-Min Hu},
     journal={IEEE Transactions on Visualization and Computer Graphics}, 
     title={Photorealistic Audio-driven Video Portraits}, 
-    year={2020}
+    year={2020},
+    volume={26},
+    number={12},
+    pages={3457-3466},
+    doi={10.1109/TVCG.2020.3023573}
 }
 ```
+
 
 ## License
 
