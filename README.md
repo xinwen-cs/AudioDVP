@@ -12,7 +12,7 @@ This is the official implementation of **Photorealistic Audio-driven Video Portr
 * FFmpeg (with H.264 support)
 
 
-FYI, detailed environment setup is in enviroment.yml.
+FYI, detailed environment setup is in [enviroment.yml](https://github.com/xinwen-cs/AudioDVP/blob/master/enviroment.yml). (You definitely don't have to install all of them, just install we you need when you encounter an import error.)
 
 
 ## Major implementation differences against original paper
@@ -26,11 +26,11 @@ FYI, detailed environment setup is in enviroment.yml.
 
 ### 1. Download face model data
 
-* Download Basel Face Model 2009 from https://faces.dmi.unibas.ch/bfm/main.php. (Register and get **01_MorphableModel.mat**.)
+* Download [Basel Face Model 2009](https://faces.dmi.unibas.ch/bfm/main.php). (Register and get **01_MorphableModel.mat**.)
 
-* Download expression basis from https://github.com/Juyong/3DFace. (There is an **Exp_Pca.bin** in CoarseData.)
+* Download expression basis from [3DFace](https://github.com/Juyong/3DFace). (There is an **Exp_Pca.bin** in CoarseData.)
 
-* Download auxiliary files from https://github.com/microsoft/Deep3DFaceReconstruction/tree/master/BFM.
+* Download auxiliary files from [Deep3DFaceReconstruction](https://github.com/microsoft/Deep3DFaceReconstruction/tree/master/BFM).
 
 * Put the data in `renderer/data` like the structure below.
 
@@ -54,15 +54,15 @@ python build_data.py
 ```
 
 ### 3.Download pretrained model of ATnet
-* The link is https://drive.google.com/drive/folders/1WYhqKBFX6mLtdJ8sYVLdWUqp5FJDmphg.
+* The link is [here](https://drive.google.com/drive/folders/1WYhqKBFX6mLtdJ8sYVLdWUqp5FJDmphg).
 * Put `atnet_lstm_18.pth` in `vendor/ATVGnet/model`.
 
 ### 4.Download pretrained ResNet on VGGFace2
-* The link is https://drive.google.com/open?id=1A94PAAnwk6L7hXdBXLFosB_s0SzEhAFU.
+* The link is [here](https://drive.google.com/open?id=1A94PAAnwk6L7hXdBXLFosB_s0SzEhAFU).
 * Put `resnet50_ft_weight.pkl` in `weights`
 
 ### 5.Download Trump speech video
-* The link is https://www.youtube.com/watch?v=6a1Mdq8-_wo. (Video courtesy of The White House.)
+* The link is [here](https://www.youtube.com/watch?v=6a1Mdq8-_wo). (Video courtesy of The White House.)
 * Put it in `data/video`
 
 ### 6.Compile CUDA rasterizer kernel
@@ -88,20 +88,19 @@ We provide expected result in `data/sample_result.mp4` using synthesized audio i
 
 This work is build upon many great open source code and data.
 
-* Many implementation details are learned from https://github.com/microsoft/Deep3DFaceReconstruction/.
+* Many implementation details are learned from [Deep3DFaceReconstruction](https://github.com/microsoft/Deep3DFaceReconstruction/tree/master/BFM).
 
-* **ATVGnet** in the vendor directory is directly borrowed from https://github.com/lelechen63/ATVGnet under MIT License.
+* **ATVGnet** in the vendor directory is directly borrowed from [ATVGnet](https://github.com/lelechen63/ATVGnet) under MIT License.
 
-* **neural-face-renderer** in the vendor directory is heavily borrowed from https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix under BSD License.
+* **neural-face-renderer** in the vendor directory is heavily borrowed from [CycleGAN and pix2pix in PyTorch](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix) under BSD License.
 
-* The pre-trained **ResNet** model on VGGFace2 dataset is from https://github.com/cydonia999/VGGFace2-pytorch under MIT License.
-We use resnet50_ft from https://drive.google.com/open?id=1A94PAAnwk6L7hXdBXLFosB_s0SzEhAFU.
+* The pre-trained **ResNet** model on VGGFace2 dataset is from [VGGFace2-pytorch](https://github.com/cydonia999/VGGFace2-pytorch) under MIT License.
 
-* **Basel2009** 3D face dataset is from https://faces.dmi.unibas.ch/bfm/main.php?nav=1-0&id=basel_face_model.
+* **Basel2009** 3D face dataset is from [here](https://faces.dmi.unibas.ch/bfm/main.php?nav=1-0&id=basel_face_model).
 
-* The **expression basis** of 3DMM is from https://github.com/Juyong/3DFace under GPL License.
+* The **expression basis** of 3DMM is from [3DFace](https://github.com/Juyong/3DFace) under GPL License.
 
-* Our **renderer** is heavily borrowed from https://github.com/google/tf_mesh_renderer and inspired by and https://github.com/andrewkchan/pytorch_mesh_renderer.
+* Our **renderer** is heavily borrowed from [tf_mesh_renderer](https://github.com/google/tf_mesh_renderer) and inspired by [pytorch_mesh_renderer](https://github.com/andrewkchan/pytorch_mesh_renderer).
 
 ## Notification
 * Our method is built upon *Deep Video Portraits*.
