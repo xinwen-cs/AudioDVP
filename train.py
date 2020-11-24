@@ -57,6 +57,3 @@ if __name__ == '__main__':
             model.forward()
             model.save_result()
             progress_bar.update(opt.batch_size)
-
-    # merge frames
-    os.system('./scripts/merge_frames.sh %s' % opt.data_dir)
