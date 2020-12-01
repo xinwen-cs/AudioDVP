@@ -12,7 +12,7 @@ This is the official implementation of **Photorealistic Audio-driven Video Portr
 * FFmpeg (with H.264 support)
 
 
-FYI, detailed environment setup is in [enviroment.yml](https://github.com/xinwen-cs/AudioDVP/blob/master/enviroment.yml). (You definitely don't have to install all of them, just install we you need when you encounter an import error.)
+FYI, detailed environment setup is in [enviroment.yml](https://github.com/xinwen-cs/AudioDVP/blob/master/enviroment.yml). (You definitely don't have to install all of them, just install what you need when you encounter an import error.)
 
 
 ## Major implementation differences against original paper
