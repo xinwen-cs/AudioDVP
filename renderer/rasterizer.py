@@ -15,6 +15,10 @@ class RasterizeFunction(torch.autograd.Function):
         px_barycentric_coords = torch.zeros(image_height, image_width, 3, dtype=torch.float32, device=vertices.device, requires_grad=True)
         z_buffer = torch.ones(image_height, image_width, dtype=torch.float32, device=vertices.device)
 
+        # fix issue https://github.com/xinwen-cs/AudioDVP/issues/9 and https://github.com/xinwen-cs/AudioDVP/issues/23
+        if not triangles.is_contiguous():
+            triangles = triangles.contiguous()
+        
         px_triangle_ids, px_barycentric_coords, z_buffer \
             = rasterize_triangles_cpp.forward(vertices, triangles, image_width, image_height,px_triangle_ids, px_barycentric_coords, z_buffer)
 
