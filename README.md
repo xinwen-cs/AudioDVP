@@ -54,7 +54,7 @@ python build_data.py
 ```
 
 ### 3.Download pretrained model of ATnet
-* The link is [here](https://drive.google.com/drive/folders/1WYhqKBFX6mLtdJ8sYVLdWUqp5FJDmphg).
+* The link is [here](https://drive.google.com/drive/folders/1McjJsKS_yrgEZeB1fb-Og-N2gf2PQMF6).
 * Put `atnet_lstm_18.pth` in `vendor/ATVGnet/model`.
 
 ### 4.Download pretrained ResNet on VGGFace2
